@@ -1,0 +1,45 @@
+{
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "javascript.format.enable": false,
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#65c89b",
+        "activityBar.activeBorder": "#945bc4",
+        "activityBar.background": "#65c89b",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#945bc4",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "statusBar.background": "#42b883",
+        "statusBar.foreground": "#15202b",
+        "statusBarItem.hoverBackground": "#359268",
+        "titleBar.activeBackground": "#42b883",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveBackground": "#42b88399",
+        "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.remoteColor": "#42b883",
+    "githubIssues.issueBranchTitle": "QC-${issueNumber}/${sanitizedIssueTitle}",
+    "python.autoComplete.extraPaths": ["pears-service"],
+    "python.analysis.extraPaths": ["pears-service"],
+    "python.sortImports.args": ["-rc", "-sp isort.cfg"],
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": ["-S", "--line-length=88"],
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/*.pyc": {
+            "when": "$(basename).py"
+        },
+        "**/__pycache__": true
+    }
+}
